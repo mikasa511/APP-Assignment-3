@@ -1,0 +1,10 @@
+/*
+ * Description: This is an automatically generated .DOT file
+ * representing a call graph.
+ * Author: ...
+ * Date: 
+ *
+ */
+digraph call-graph {
+ node [shape = oval];
+Newspaper -> Blogger[ label = "0. " ]

@@ -1,0 +1,28 @@
+/*
+ * Description: This is an automatically generated .DOT file
+ * representing a call graph.
+ * Author: 
+ * Date: 
+ *
+ */
+digraph call-graph {
+ node [shape = oval];
+ Newsportal -> Blogger[ label = "1. addObserver" ];
+ Newspaper -> Blogger[ label = "2. addObserver" ];
+ MobileSubscriber -> Blogger[ label = "3. addObserver" ];
+ Blogger -> Blogger[ label = "4. notifyObservers" ];
+ Newsportal -> Blogger[ label = "5. getHeadline" ];
+ Blogger -> Newspaper[ label = "6. update" ];
+ Newspaper -> Blogger[ label = "7. getHeadline" ];
+ MobileSubscriber -> Blogger[ label = "8. getHeadline" ];
+ Blogger -> Blogger[ label = "9. notifyObservers" ];
+ Newsportal -> Blogger[ label = "10. getHeadline" ];
+ Blogger -> Newspaper[ label = "11. update" ];
+ Newspaper -> Blogger[ label = "12. getHeadline" ];
+ MobileSubscriber -> Blogger[ label = "13. getHeadline" ];
+ Blogger -> Blogger[ label = "14. notifyObservers" ];
+ Newsportal -> Blogger[ label = "15. getHeadline" ];
+ Blogger -> Newspaper[ label = "16. update" ];
+ Newspaper -> Blogger[ label = "17. getHeadline" ];
+ MobileSubscriber -> Blogger[ label = "18. getHeadline" ];
+}
