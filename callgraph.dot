@@ -5,30 +5,33 @@
  * Date: 
  *
  */
-digraph callgraph {
- node [shape = oval];
- Newsportal -> Blogger[ label = "1. addObserver" ];
- Newspaper -> Blogger[ label = "2. addObserver" ];
- MobileSubscriber -> Blogger[ label = "3. addObserver" ];
- Blogger -> Blogger[ label = "4. notifyObservers" ];
- Blogger -> Newsportal[ label = "5. update" ];
- Newsportal -> Blogger[ label = "6. getHeadline" ];
- Blogger -> Newspaper[ label = "7. update" ];
- Newspaper -> Blogger[ label = "8. getHeadline" ];
- Blogger -> MobileSubscriber[ label = "9. update" ];
- MobileSubscriber -> Blogger[ label = "10. getHeadline" ];
- Blogger -> Blogger[ label = "11. notifyObservers" ];
- Blogger -> Newsportal[ label = "12. update" ];
- Newsportal -> Blogger[ label = "13. getHeadline" ];
- Blogger -> Newspaper[ label = "14. update" ];
- Newspaper -> Blogger[ label = "15. getHeadline" ];
- Blogger -> MobileSubscriber[ label = "16. update" ];
- MobileSubscriber -> Blogger[ label = "17. getHeadline" ];
- Blogger -> Blogger[ label = "18. notifyObservers" ];
- Blogger -> Newsportal[ label = "19. update" ];
- Newsportal -> Blogger[ label = "20. getHeadline" ];
- Blogger -> Newspaper[ label = "21. update" ];
- Newspaper -> Blogger[ label = "22. getHeadline" ];
- Blogger -> MobileSubscriber[ label = "23. update" ];
- MobileSubscriber -> Blogger[ label = "24. getHeadline" ];
+SequenceDiagram [frame=true framecolor=steelblue label="Observer Design PatternSequence Diagram"]{
+ lifeline "Blogger:blogger" as Blogger
+ lifeline "Newsportal:observer 1" as Newsportal
+ Newsportal --> Blogger "1. addObserver(..)"
+ lifeline "Newspaper:observer 2" as Newspaper
+ Newspaper --> Blogger "2. addObserver(..)"
+ lifeline "MobileSubscriber:observer 3" as MobileSubscriber
+ MobileSubscriber --> Blogger "3. addObserver(..)"
+ -f-> Blogger "4. setHeadline(..)"
+ Blogger --> Blogger "5. notifyObservers()"
+ Blogger --> Newsportal "6. update()"
+ Newsportal --> Blogger "7. getHeadline()"
+ Blogger --> Newspaper "8. update()"
+ Newspaper --> Blogger "9. getHeadline()"
+ Blogger --> MobileSubscriber "10. update()"
+ MobileSubscriber --> Blogger "11. getHeadline()"
+ Newsportal --> Newsportal "12. getState()"
+ Newspaper --> Newspaper "13. getState()"
+ MobileSubscriber --> MobileSubscriber "14. getState()"
+ Blogger --> Blogger "15. removeObserver(..)"
+ -f-> Blogger "16. setHeadline(..)"
+ Blogger --> Blogger "17. notifyObservers()"
+ Blogger --> Newsportal "18. update()"
+ Newsportal --> Blogger "19. getHeadline()"
+ Blogger --> Newspaper "20. update()"
+ Newspaper --> Blogger "21. getHeadline()"
+ Newsportal --> Newsportal "22. getState()"
+ Newspaper --> Newspaper "23. getState()"
+ MobileSubscriber --> MobileSubscriber "24. getState()"
 }
