@@ -5,6 +5,7 @@
  * Date: Sun Oct 30 15:05:35 EDT 2022
  *
  */
+<<<<<<< HEAD
 digraph callgraph {
  node [shape = oval];
  Newsportal -> Blogger[ label = "1. addObserver" ];
@@ -37,4 +38,35 @@ digraph callgraph {
  Newsportal -> Blogger[ label = "28. getHeadline" ];
  Blogger -> MobileSubscriber[ label = "29. update" ];
  MobileSubscriber -> Blogger[ label = "30. getHeadline" ];
+=======
+SequenceDiagram [frame=true framecolor=steelblue label="Observer Design PatternSequence Diagram"]{
+ lifeline "Blogger:blogger" as Blogger
+ lifeline "Newsportal:observer 1" as Newsportal
+ Newsportal --> Blogger "1. addObserver(..)"
+ lifeline "Newspaper:observer 2" as Newspaper
+ Newspaper --> Blogger "2. addObserver(..)"
+ lifeline "MobileSubscriber:observer 3" as MobileSubscriber
+ MobileSubscriber --> Blogger "3. addObserver(..)"
+ -f-> Blogger "4. setHeadline(..)"
+ Blogger --> Blogger "5. notifyObservers()"
+ Blogger --> Newsportal "6. update()"
+ Newsportal --> Blogger "7. getHeadline()"
+ Blogger --> Newspaper "8. update()"
+ Newspaper --> Blogger "9. getHeadline()"
+ Blogger --> MobileSubscriber "10. update()"
+ MobileSubscriber --> Blogger "11. getHeadline()"
+ Newsportal --> Newsportal "12. getState()"
+ Newspaper --> Newspaper "13. getState()"
+ MobileSubscriber --> MobileSubscriber "14. getState()"
+ Blogger --> Blogger "15. removeObserver(..)"
+ -f-> Blogger "16. setHeadline(..)"
+ Blogger --> Blogger "17. notifyObservers()"
+ Blogger --> Newsportal "18. update()"
+ Newsportal --> Blogger "19. getHeadline()"
+ Blogger --> Newspaper "20. update()"
+ Newspaper --> Blogger "21. getHeadline()"
+ Newsportal --> Newsportal "22. getState()"
+ Newspaper --> Newspaper "23. getState()"
+ MobileSubscriber --> MobileSubscriber "24. getState()"
+>>>>>>> 3b5d4068c40b410cf96a162992a74a1ea870b7e0
 }

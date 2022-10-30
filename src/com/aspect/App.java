@@ -14,11 +14,10 @@ public class App {
 		System.out.println(observer1.getState());
 		System.out.println(observer2.getState());
 		System.out.println(observer3.getState());
+		blogger.removeObserver(observer3);
 		blogger.setHeadline("1 degree C temprature in Montreal 2:00 AM.");
 		System.out.println(observer1.getState());
 		System.out.println(observer2.getState());
-		blogger.setHeadline("2 degree C temprature in Montreal 3:00 AM.");
-		System.out.println(observer1.getState());
 		System.out.println(observer3.getState());
 		blogger.removeObserver(observer2);
 		blogger.setHeadline("3 degree C temprature in Montreal 4:00 AM.");
