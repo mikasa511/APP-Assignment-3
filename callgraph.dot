@@ -1,28 +1,34 @@
 /*
  * Description: This is an automatically generated .DOT file
  * representing a call graph.
- * Author: 
+ * Author: Raveena Choudhary - , Umangkumar Maheshbhai Patel - 40228475
  * Date: 
  *
  */
-digraph call-graph {
+digraph callgraph {
  node [shape = oval];
  Newsportal -> Blogger[ label = "1. addObserver" ];
  Newspaper -> Blogger[ label = "2. addObserver" ];
  MobileSubscriber -> Blogger[ label = "3. addObserver" ];
  Blogger -> Blogger[ label = "4. notifyObservers" ];
- Newsportal -> Blogger[ label = "5. getHeadline" ];
- Blogger -> Newspaper[ label = "6. update" ];
- Newspaper -> Blogger[ label = "7. getHeadline" ];
- MobileSubscriber -> Blogger[ label = "8. getHeadline" ];
- Blogger -> Blogger[ label = "9. notifyObservers" ];
- Newsportal -> Blogger[ label = "10. getHeadline" ];
- Blogger -> Newspaper[ label = "11. update" ];
- Newspaper -> Blogger[ label = "12. getHeadline" ];
- MobileSubscriber -> Blogger[ label = "13. getHeadline" ];
- Blogger -> Blogger[ label = "14. notifyObservers" ];
- Newsportal -> Blogger[ label = "15. getHeadline" ];
- Blogger -> Newspaper[ label = "16. update" ];
- Newspaper -> Blogger[ label = "17. getHeadline" ];
- MobileSubscriber -> Blogger[ label = "18. getHeadline" ];
+ Blogger -> Newsportal[ label = "5. update" ];
+ Newsportal -> Blogger[ label = "6. getHeadline" ];
+ Blogger -> Newspaper[ label = "7. update" ];
+ Newspaper -> Blogger[ label = "8. getHeadline" ];
+ Blogger -> MobileSubscriber[ label = "9. update" ];
+ MobileSubscriber -> Blogger[ label = "10. getHeadline" ];
+ Blogger -> Blogger[ label = "11. notifyObservers" ];
+ Blogger -> Newsportal[ label = "12. update" ];
+ Newsportal -> Blogger[ label = "13. getHeadline" ];
+ Blogger -> Newspaper[ label = "14. update" ];
+ Newspaper -> Blogger[ label = "15. getHeadline" ];
+ Blogger -> MobileSubscriber[ label = "16. update" ];
+ MobileSubscriber -> Blogger[ label = "17. getHeadline" ];
+ Blogger -> Blogger[ label = "18. notifyObservers" ];
+ Blogger -> Newsportal[ label = "19. update" ];
+ Newsportal -> Blogger[ label = "20. getHeadline" ];
+ Blogger -> Newspaper[ label = "21. update" ];
+ Newspaper -> Blogger[ label = "22. getHeadline" ];
+ Blogger -> MobileSubscriber[ label = "23. update" ];
+ MobileSubscriber -> Blogger[ label = "24. getHeadline" ];
 }

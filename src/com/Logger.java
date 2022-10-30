@@ -17,8 +17,9 @@ public class Logger {
 
 			writer = new PrintWriter(new FileWriter("callgraph.dot"));
 			writer.println("/*\n" + " * Description: This is an automatically generated .DOT file\n"
-					+ " * representing a call graph.\n" + " * Author: \n" + " * Date: " + "\n" + " *\n" + " */\n"
-					+ "digraph call-graph {\n" + " node [shape = oval];");
+					+ " * representing a call graph.\n"
+					+ " * Author: Raveena Choudhary - , Umangkumar Maheshbhai Patel - 40228475\n" + " * Date: " + "\n"
+					+ " *\n" + " */\n" + "digraph callgraph {\n" + " node [shape = oval];");
 
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot open 'calls.txt' for writing.", e);
