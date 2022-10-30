@@ -1,17 +1,18 @@
-Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370
-Assignment 3- APP
+**Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370**
+##Assignment 3- APP
 
 Observer pattern is used as a base application to write aspectj definition named as "Instrumentator.aj"
-"Instrumentator.aj" covers method used in base application such as:
+> "Instrumentator.aj" covers method used in base application such as:
 1. To add an observer: addObserver(Observer observer)
 2. To notify observers: notifyObservers()
 3. To update an observer: update()
 4. To remove an observer: removeObserver(Observer observer)
-5. To getHeadLines from Blogger: getHeadline()
+5. To get headLine from Blogger: getHeadline()
+6. To get current state from Observer: getState()
 
 Also, a file "callgraph.dot" has been created through program(Please refer Logger.java) - to generate UML(Sequence Diagram) using a tool dotUML(https://dotuml.com/playground.html#).
 
-DOT graphical language is as below:
+> DOT graphical language is as below:
 /*
  * Description: This is an automatically generated .DOT file
  * representing a call graph.
