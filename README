@@ -1,8 +1,8 @@
 Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370
 Assignment 3- APP
 
-Observer pattern is used as a base application to write aspectj definition named as "Aspect.aj"
-"Aspect.aj" covers method used in base application such as:
+Observer pattern is used as a base application to write aspectj definition named as "Instrumentator.aj"
+"Instrumentator.aj" covers method used in base application such as:
 1. To add an observer: addObserver(Observer observer)
 2. To notify observers: notifyObservers()
 3. To update an observer: update()
