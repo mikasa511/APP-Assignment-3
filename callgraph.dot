@@ -1,8 +1,8 @@
 /*
  * Description: This is an automatically generated .DOT file
  * representing a call graph.
- * Author: Raveena Choudhary - , Umangkumar Maheshbhai Patel - 40228475
- * Date: 
+ * Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370
+ * Date: Sun Oct 30 15:05:35 EDT 2022
  *
  */
 digraph callgraph {
@@ -31,4 +31,10 @@ digraph callgraph {
  Newspaper -> Blogger[ label = "22. getHeadline" ];
  Blogger -> MobileSubscriber[ label = "23. update" ];
  MobileSubscriber -> Blogger[ label = "24. getHeadline" ];
+ Blogger -> Blogger[ label = "25. removeObserver" ];
+ Blogger -> Blogger[ label = "26. notifyObservers" ];
+ Blogger -> Newsportal[ label = "27. update" ];
+ Newsportal -> Blogger[ label = "28. getHeadline" ];
+ Blogger -> MobileSubscriber[ label = "29. update" ];
+ MobileSubscriber -> Blogger[ label = "30. getHeadline" ];
 }

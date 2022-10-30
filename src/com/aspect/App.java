@@ -1,4 +1,8 @@
-package com;
+/**
+ * Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370
+ * Assignment 3- APP
+ */
+package com.aspect;
 
 public class App {
 	public static void main(String[] args) {
@@ -15,6 +19,11 @@ public class App {
 		System.out.println(observer2.getState());
 		blogger.setHeadline("2 degree C temprature in Montreal 3:00 AM.");
 		System.out.println(observer1.getState());
+		System.out.println(observer3.getState());
+		blogger.removeObserver(observer2);
+		blogger.setHeadline("3 degree C temprature in Montreal 4:00 AM.");
+		System.out.println(observer1.getState());
+		System.out.println(observer2.getState());
 		System.out.println(observer3.getState());
 	}
 }
