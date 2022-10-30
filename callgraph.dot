@@ -1,11 +1,9 @@
 /*
  * Description: This is an automatically generated .DOT file
- * representing a call graph.
+ * representing a DotUML script to make the UML sequence diagram.
  * Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370
- * Date: Sun Oct 30 15:05:35 EDT 2022
- *
- */
-SequenceDiagram [frame=true framecolor=steelblue label="Observer Design PatternSequence Diagram"]{
+ * Date: Sun Oct 30 15:57:01 EDT 2022*/
+SequenceDiagram [frame=true framecolor=steelblue label="Observer Design Pattern Sequence Diagram using AspectJ"]{
  lifeline "Blogger:blogger" as Blogger
  lifeline "Newsportal:observer 1" as Newsportal
  Newsportal --> Blogger "1. addObserver(..)"

@@ -23,9 +23,10 @@ public class Logger {
 
 			writer = new PrintWriter(new FileWriter("callgraph.dot"));
 			writer.println("/*\n" + " * Description: This is an automatically generated .DOT file\n"
-					+ " * representing a call graph.\n"
-					+ " * Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370\n" + " * Date: " +date+ "\n"
-					+ "SequenceDiagram [frame=true framecolor=steelblue label=\"Observer Design PatternSequence Diagram\"]{");
+					+ " * representing a DotUML script to make the UML sequence diagram.\n"
+					+ " * Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370\n" + " * Date: "
+					+ date + "*/\n"
+					+ "SequenceDiagram [frame=true framecolor=steelblue label=\"Observer Design Pattern Sequence Diagram using AspectJ\"]{");
 
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot open 'callgraph.dot' for writing.", e);
