@@ -1,4 +1,9 @@
-package com;
+/**
+ * Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370
+ * Assignment 3- APP
+ */
+package com.aspect;
+
 public class Newspaper implements Observer {
 	private Blogger blogger;
 	private String state;
@@ -7,7 +12,7 @@ public class Newspaper implements Observer {
 		this.blogger = blogger;
 		this.blogger.addObserver(this);
 	}
-
+	
 	public void update() {
 		this.state = blogger.getHeadline();
 	}

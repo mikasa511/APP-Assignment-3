@@ -1,28 +1,30 @@
-package com;
+/**
+ * Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370
+ * Assignment 3- APP
+ */
+package com.aspect;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Date;
 
 public class Logger {
 	public static Logger INSTANCE = new Logger();
 	private static int currentLineNumber;
 	private int currentInstanceNumber;
-
-	// private Stack<String> callStack = new Stack<String>();
-//	private Set<String> callLog = new HashSet<String>();
 	private PrintWriter writer;
 
 	public Logger() {
 		currentLineNumber = 1;
+		Date date = new Date();
 		currentInstanceNumber = 0;
 		try {
 
 			writer = new PrintWriter(new FileWriter("callgraph.dot"));
 			writer.println("/*\n" + " * Description: This is an automatically generated .DOT file\n"
 					+ " * representing a call graph.\n"
-					+ " * Author: Raveena Choudhary - , Umangkumar Maheshbhai Patel - 40228475\n" + " * Date: " + "\n"
-					+ " *\n" + " */\n"
+					+ " * Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370\n" + " * Date: " +date+ "\n"
 					+ "SequenceDiagram [frame=true framecolor=steelblue label=\"Observer Design PatternSequence Diagram\"]{");
 
 		} catch (IOException e) {
@@ -67,7 +69,6 @@ public class Logger {
 	private void write(String line) {
 		try {
 			writer.write(line + "\n");
-
 			currentLineNumber++;
 			writer.flush();
 		} catch (Exception e) {

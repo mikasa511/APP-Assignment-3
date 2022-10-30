@@ -1,4 +1,8 @@
-package com;
+/**
+ * Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370
+ * Assignment 3- APP
+ */
+package com.aspect;
 
 import java.util.ArrayList;
 
@@ -18,7 +22,10 @@ public class Blogger implements Subject {
 
 	public void notifyObservers() {
 		for (int i = 0; i < observers.size(); i++)
+		{
 			observers.get(i).update();
+		}
+			
 	}
 
 	public String getHeadline() {
