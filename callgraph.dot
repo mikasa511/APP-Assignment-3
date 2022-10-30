@@ -5,40 +5,6 @@
  * Date: Sun Oct 30 15:05:35 EDT 2022
  *
  */
-<<<<<<< HEAD
-digraph callgraph {
- node [shape = oval];
- Newsportal -> Blogger[ label = "1. addObserver" ];
- Newspaper -> Blogger[ label = "2. addObserver" ];
- MobileSubscriber -> Blogger[ label = "3. addObserver" ];
- Blogger -> Blogger[ label = "4. notifyObservers" ];
- Blogger -> Newsportal[ label = "5. update" ];
- Newsportal -> Blogger[ label = "6. getHeadline" ];
- Blogger -> Newspaper[ label = "7. update" ];
- Newspaper -> Blogger[ label = "8. getHeadline" ];
- Blogger -> MobileSubscriber[ label = "9. update" ];
- MobileSubscriber -> Blogger[ label = "10. getHeadline" ];
- Blogger -> Blogger[ label = "11. notifyObservers" ];
- Blogger -> Newsportal[ label = "12. update" ];
- Newsportal -> Blogger[ label = "13. getHeadline" ];
- Blogger -> Newspaper[ label = "14. update" ];
- Newspaper -> Blogger[ label = "15. getHeadline" ];
- Blogger -> MobileSubscriber[ label = "16. update" ];
- MobileSubscriber -> Blogger[ label = "17. getHeadline" ];
- Blogger -> Blogger[ label = "18. notifyObservers" ];
- Blogger -> Newsportal[ label = "19. update" ];
- Newsportal -> Blogger[ label = "20. getHeadline" ];
- Blogger -> Newspaper[ label = "21. update" ];
- Newspaper -> Blogger[ label = "22. getHeadline" ];
- Blogger -> MobileSubscriber[ label = "23. update" ];
- MobileSubscriber -> Blogger[ label = "24. getHeadline" ];
- Blogger -> Blogger[ label = "25. removeObserver" ];
- Blogger -> Blogger[ label = "26. notifyObservers" ];
- Blogger -> Newsportal[ label = "27. update" ];
- Newsportal -> Blogger[ label = "28. getHeadline" ];
- Blogger -> MobileSubscriber[ label = "29. update" ];
- MobileSubscriber -> Blogger[ label = "30. getHeadline" ];
-=======
 SequenceDiagram [frame=true framecolor=steelblue label="Observer Design PatternSequence Diagram"]{
  lifeline "Blogger:blogger" as Blogger
  lifeline "Newsportal:observer 1" as Newsportal
@@ -68,5 +34,4 @@ SequenceDiagram [frame=true framecolor=steelblue label="Observer Design PatternS
  Newsportal --> Newsportal "22. getState()"
  Newspaper --> Newspaper "23. getState()"
  MobileSubscriber --> MobileSubscriber "24. getState()"
->>>>>>> 3b5d4068c40b410cf96a162992a74a1ea870b7e0
 }
