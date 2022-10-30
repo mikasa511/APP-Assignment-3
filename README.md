@@ -1,5 +1,8 @@
-**Author: Umangkumar Maheshbhai Patel - 40228475, Raveena Choudhary - 40232370**
-##Assignment 3- APP
+**Authors: 
+Umangkumar Maheshbhai Patel - 40228475
+Raveena Choudhary - 40232370**
+
+# Assignment 3- APP
 
 Observer pattern is used as a base application to write aspectj definition named as "Instrumentator.aj"
 > "Instrumentator.aj" covers method used in base application such as:
@@ -13,6 +16,7 @@ Observer pattern is used as a base application to write aspectj definition named
 Also, a file "callgraph.dot" has been created through program(Please refer Logger.java) - to generate UML(Sequence Diagram) using a tool dotUML(https://dotuml.com/playground.html#).
 
 > DOT graphical language is as below:
+````
 /*
  * Description: This is an automatically generated .DOT file
  * representing a call graph.
@@ -50,7 +54,9 @@ SequenceDiagram [frame=true framecolor=steelblue label="Observer Design PatternS
  Newspaper --> Newspaper "23. getState()"
  MobileSubscriber --> MobileSubscriber "24. getState()"
 }
+````
 
 
- 
+ ![dotuml](https://user-images.githubusercontent.com/116931930/198900445-9223caca-73c3-4e9e-87ef-aaa9332fe4c8.png)
+
  
